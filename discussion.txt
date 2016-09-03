@@ -1,0 +1,57 @@
+PART 1: DISCUSSION QUESTIONS
+_____________________________________
+
+
+
+RECURSION
+
+1. Recursion is the process of a function calling itself from within the function.
+2. The Base Case is important in order to finish the recursion at some point. It will be the innermost recursive function call that indicates that it is the final recursion, at which point, the function will start wrapping up the recursive calls it has entered to reach the Base Case.
+
+
+
+GRAPHS
+
+1. A graph is a type of data structure that is constructed of nodes and edges to show connections.
+2. Unlike a tree, graphs can contain loops, which may or may not be directed.
+3. An example would be a representation of all the different routes a player can take to finish a board game. Not only can the player move forward, but if the player lands on a certain square (or node) with a specific set of instructions, such as "Return to Start", the player then has to move back to the beginning. If the instructions indicate "Jump 5 Steps", the player can move directly to that position (or node). Once the player reaches the last node, if the instructions indicate that a certain set of requirements must be met, and the player has yet to fulfill them, maybe the player is returned to the beginning again. In this way, there will be looping connections between the nodes.
+
+
+
+PERFORMANCE OF DIFFERENT DATA STRUCTURES
+
+Data Structure              Index   Search  Add-R   Add-L   Pop-L   Pop-R
+Python List (Array)          O(1)    O(n)    O(1)    O(n)    O(n)    O(1)
+Linked List                  O(n)    O(n)    O(1)    O(1)    O(1)    O(n)
+Doubly-Linked List           O(n)    O(n)    O(1)    O(1)    O(1)    O(1)
+Queue (as Array)              X       X      O(1)     X      O(n)     X
+Queue (as LL or DLL)          X       X      O(1)     X      O(1)     X
+Stack (as Array, LL, or DLL)  X       X      O(1)     X       X      O(1)
+Deque (as DLL)                X       X      O(1)    O(1)    O(1)    O(1)     
+
+
+Data Structure          Get     Add    Delete  Iterate   Memory
+Dictionary (Hash Map)   O(1)    O(1)    O(1)     O(n)    medium
+Set (Hash Map)          O(1)    O(1)    O(1)     O(n)    medium         
+Binary Search Tree    O(nlogn)  O(n)    O(n)     O(1)    little            
+Tree                    O(n)    O(1)    O(1)     O(1)    little   
+
+
+
+SORTING
+
+1. The Bubble Sort algorithm takes a list and compares the first two values, then makes sure that the second value is larger than the first. This process of comparing two adjacent values, then switching them according to which one is larger, will end up moving the largest value to the end of the list. This process continues until the list is sorted.
+2. The Merge Sort algorithm compares two halves (or almost halves) of the input list. These halved lists are halved again and again, until the base case is reached. The Merge Sort compares two values, but it takes a divide and conquer method to do so. This algorithm breaks down the input into the smalled case , which is a list of one. After comparing the two values, they are appended to a new list, in order. This process continues until all the values have been sorted.
+3. The Quick Sort algorithm randomly chooses a pivot to partition the input list. Values less than the pivot are moved to the left, while values higher than the pivot are moved to the right. This process continues for each side of the pivot until the list is sorted. 
+
+
+
+GIT BRANCHING
+
+1. If I wanted to add a new feature to my project, but still wanted to work on the bus in the project, I may be inclined to make a git branch so that I can work on both parts separately until I decide I want a merge to happen.
+2. A pull request serves to propose changes to files in a remote repository. By submitting a pull request, other people may view your changes and comment on them, allowing for some collaboration to occur before the changes are approved by the owner of the repository and actually committed.
+
+
+
+
+
